@@ -1,0 +1,17 @@
+public class Main {
+	public static void main(String[] args) {
+		int[] arr = {10, -20, 0, 30, 40, 60, 10};
+		
+		for(int i = 0; i <= arr.length-1; i++){
+		    System.out.print(arr[i] + " ");
+		}
+		boolean isEqualGreaterThan2;
+		System.out.println();
+		if(arr[0] == 10 && arr[arr.length-1] == 10 && arr.length > 2){
+		    isEqualGreaterThan2 = true;
+		}else{
+		    isEqualGreaterThan2 = false;
+		}
+		System.out.print(isEqualGreaterThan2);
+	}
+}

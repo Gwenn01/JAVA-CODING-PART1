@@ -1,0 +1,42 @@
+public class Main {
+	public static void main(String[] args) {
+		int[][] arr = {
+			{1, 2, 3},
+			{4, 5, 6},
+			{7, 8, 9}		
+			};
+		System.out.println("Printing rows: ");
+		for(int i = 0; i <= arr.length-1;i++){
+			for(int j = 0; j <= arr.length-1;j++){
+				System.out.print(arr[i][j]);
+			}
+			System.out.println();
+		}
+		System.out.println();
+		
+		System.out.println("Printing columns: ");
+		for(int i = 0; i <= arr.length-1;i++){
+			for(int j = 0; j <= arr.length-1;j++){
+				System.out.print(arr[j][i]);
+			}
+			System.out.println();
+		}
+		System.out.println();
+		
+		
+		//ragged array
+			int[][] arrr = {
+			{1, 2, 3},
+			{4, 4, 6, 5, 8},
+			{7, 8, 9, 3}		
+			};
+			for(int i = 0; i <= arrr.length-1;i++){
+				for(int j = 0; j <= arrr[i].length-1;j++){
+				System.out.print(arrr[i][j]);
+			}
+			System.out.println();
+		}
+		System.out.println();	
+			
+	}
+}

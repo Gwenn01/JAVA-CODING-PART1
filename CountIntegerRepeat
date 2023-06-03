@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a numbers more than 1: ");
+		int n = s.nextInt();
+		
+		
+		int rem, rem1, q;
+		int count = 0;
+		
+		while(n != 0){
+		rem = n % 10;	
+		q = n;
+	        while(q != 0){
+	           q = q / 10;
+	           rem1 = q % 10;
+	           if(rem == rem1){
+	           	System.out.print(rem);
+	           }
+	        }	
+		n /= 10;	
+		}
+		
+		
+	}
+}

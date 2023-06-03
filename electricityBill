@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Number of Units: ");
+		double nUnit = s.nextInt();
+		
+		double AmountPayable, rateUnit;
+		
+		if(nUnit <= 50){
+		    AmountPayable = nUnit * 0.50;
+		    System.out.print(AmountPayable);
+		}else if(nUnit > 50 && nUnit < 150){
+		    AmountPayable = nUnit * 0.75;
+		    System.out.print(AmountPayable);
+		}else if(nUnit > 150 && nUnit < 250){
+		    AmountPayable = nUnit * 1.25;
+		    System.out.print(AmountPayable);
+		}else{
+		    AmountPayable = nUnit * 1.5;
+		    System.out.print(AmountPayable);
+		}
+		
+	}
+}

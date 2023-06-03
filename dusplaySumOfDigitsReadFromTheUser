@@ -1,0 +1,15 @@
+import java.util.*; 
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+	System.out.print("Enter a more than 2 digits numbers: ");
+	int n = s.nextInt();
+	int rem, result = 0;
+	while(n != 0){
+		rem = n % 10;
+		result = result + rem;
+		n = n / 10;
+	}
+	System.out.print("The sum is " + result);
+	}
+}

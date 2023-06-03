@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a first num: ");
+		double num1 = s.nextInt();
+		System.out.print("Enter a second num: ");
+		double num2 = s.nextInt();
+		
+		double sum, dif, quotient, product;
+		
+		sum = num1 + num2;
+		dif = num1 - num2;
+		product = num1 * num2;
+		quotient = num1 / num2;
+		
+		System.out.println(sum);
+		System.out.println(dif);
+		System.out.println(product);
+		System.out.println(quotient);
+		
+		
+		
+	}
+}

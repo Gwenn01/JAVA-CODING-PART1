@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a binary: ");
+		int binary = s.nextInt();
+		int rem, decimal = 0, weight = 1;
+		
+		while(binary != 0){
+		rem = binary % 10;
+		decimal = decimal + rem * weight;
+		binary = binary / 10;
+		weight = weight * 2;	
+		}
+		System.out.print(decimal);
+	}
+}

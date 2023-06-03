@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a String: ");
+		String str = s.nextLine();
+		
+		char[] c = str.toCharArray();
+		String result = "";
+		
+		for(int i = 0; i <= c.length-1; i++){
+		    
+		    if(Character.isUpperCase(c[i])){
+		        result += " ";
+		    }
+		    result = result + c[i];
+		}
+		System.out.println(result);
+	}
+}

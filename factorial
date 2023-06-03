@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		int n = s.nextInt();
+		int q = n;
+		int a, b, result;
+	    while(n != 2){
+	    a = n - 1;
+	    b = q * a;
+	    System.out.println(b);
+	    q = b;
+	    n = a;
+	    }
+	  
+	    
+	}
+}

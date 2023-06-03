@@ -1,0 +1,69 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Please enter 10 values");
+		int[] values = new int[10];
+		
+		for(int i = 0; i <= values.length -1; i++){
+			 values[i] = s.nextInt();
+		}
+		
+		System.out.print("The entered values are ");
+		
+	    for(int j = 0; j <= values.length - 1; j++){
+	    System.out.print(values[j]);
+	    if(values[j] != values[9]){
+	        System.out.print(", ");
+	    }
+	    }
+	    
+	    System.out.println();
+	    System.out.print("The product of the two highest values is: ");
+	    
+	    int highest1 = 0, highest2 = 0, product;
+	    for(int i = 0; i <= values.length -1; i++){
+	    	  if(highest1 <= values[i]){
+	    	      highest1 = values[i];
+	    	  }
+	    }
+	   
+	    for(int i = 0; i <= values.length-1; i++){
+	      if(highest2 <= values[i] && highest1 != values[i]){
+	    	  	highest2 = values[i];
+	         }
+	    }
+	    product = highest1 * highest2;
+	    System.out.println(product);
+	   
+	    System.out.print("The average of 10 values is: ");
+	    int sum = 0, ave;
+	    for(int i = 0; i <= values.length-1;i++){
+	    	  sum = sum + values[i];
+	    }
+	    ave = sum/10;
+	    System.out.println(ave);
+	    
+	    System.out.print("The lowest value is: ");
+	    int low = 100;
+	    for(int i = 0; i <= values.length-1; i++){
+	    	if(low >= values[i]){
+	    		low = values[i];
+	    	}
+	    }
+	    System.out.println(low);
+	     
+	    System.out.print("The highest value is: ");
+	    int high = 0;
+	    for(int i = 0; i <= values.length-1; i++){
+	    	if(high <= values[i]){
+	    		high= values[i];
+	    	}
+	    }
+	    System.out.println(high);
+	    
+	    System.out.print("The quotient of highest and lowest value is:");
+	    int quotient = high / low;
+	    System.out.println(quotient);
+	}
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+	
+	Scanner scan = new Scanner(System.in);
+	
+    System.out.print("  ENTER FIRST NUMBER: ");
+    int numone = scan.nextInt();
+    
+    System.out.print("  ENTER SECOND NUMBER: ");
+    int numtwo = scan.nextInt();
+    System.out.print("  ENTER T NUMBER: ");
+    int numthree = scan.nextInt();
+    
+    
+	Scanner scanopt = new Scanner(System.in);
+    
+    System.out.print("  ENTER OPERATOR: ");
+    String opt = scanopt.nextLine();
+	}
+}

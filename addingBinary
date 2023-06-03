@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a binary 1: ");
+		int b1 = s.nextInt();
+		System.out.println("Enter a binary 2: ");
+		int b2 = s.nextInt();
+		int rem1, rem2, rem3 = 0, bOne = 1, bZero = 0;
+		String result= "";
+		while(b1 != 0 || b2 != 0){
+			rem1 = b1 % 10;
+			rem2 = b2 % 10;
+		    if((rem1 == 1 && rem2 == 0) || (rem1 == 0 && rem2 == 1)) {
+				result = result + bOne;
+					}
+		if((rem1 == 0 && rem2 == 0) || (rem1 == 1 && rem2 == 1)){
+				result = result + bZero;
+					}	
+			b1 = b1 / 10;
+			b2 = b2 / 10;
+		}
+		
+		String sum = "";
+		char[] arr = result.toCharArray();
+		for(int i = arr.length-1; i >= 0; i--){
+			sum = sum + arr[i];
+		}
+		
+		
+		System.out.println("The sum of two binary is: ");
+		System.out.println(sum);
+		
+	}
+}

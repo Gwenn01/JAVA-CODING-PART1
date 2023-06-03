@@ -1,0 +1,45 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		ArrayList<Integer> arr = new ArrayList<>();
+		
+		System.out.println("1. Add");
+		System.out.println("2. Remove");	
+		System.out.println("3. Display");
+		System.out.println("4. Exit");
+	  
+		int choice;
+		
+		
+		do{
+			System.out.println();
+			System.out.print("Your Choice: ");
+	    	choice = s.nextInt();
+		    System.out.println();
+		    
+		    if(choice == 1){
+		    	System.out.print("Enter a Integer: ");
+				int n = s.nextInt();
+				arr.add(n);
+				System.out.println("Added.");
+		    }else if(choice == 2){
+		    	System.out.print("Enter a Integer to be remove: ");
+		    	int r = s.nextInt();
+		    	if(arr.contains(r)){
+		    		arr.remove(Integer.valueOf(r));
+		    		System.out.print("Removed.");
+		    	}else {
+		    		System.out.print("Not found");
+		    	}   	
+		    }else if(choice == 3){
+		    	System.out.print("Your list: " + arr);
+		    }else {
+		    	System.out.print("Invalid Choice");
+			}	
+		
+		}while(choice != 4);
+		
+		
+	}
+}

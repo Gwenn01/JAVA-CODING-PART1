@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter a number: ");
+		long num = s.nextLong();;
+		long n1 = 0L, n2 = 1L, n3 = 0L;
+		
+		System.out.println(n1);
+		System.out.println(n2);
+		
+		for(int i = 2; i <= num; i++){
+			  n3 = n1 + n2;
+			  System.out.println(n3);
+			  n1 = n2; // passing the value
+			  n2 = n3;
+		}
+		
+		
+	}
+}

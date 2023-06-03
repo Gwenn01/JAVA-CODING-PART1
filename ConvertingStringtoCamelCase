@@ -1,0 +1,24 @@
+public class Main {
+	public static void main(String[] args) {
+		String word = "the-stealth-warrior";
+		
+		char[] c = word.toCharArray();
+		
+		for(int i = 0; i < c.length; i++){
+		    if(c[i] == '-' || c[i] == '_'){
+		        c[i] = ' ';
+		        c[i+1] = Character.toUpperCase(c[i+1]);
+		    }
+		}
+		
+		String result = "";
+		
+		for(int i = 0; i < c.length; i++){
+		    if(c[i] != ' '){
+		         result += c[i];
+		    }
+	    }
+	   System.out.println(result);
+	    
+	}
+}

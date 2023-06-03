@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+	double sum = 0, div;
+	
+    for(int i = 1; i <= 5; i++){
+    System.out.print("Enter "+ i + " grade: ");
+    int g = s.nextInt();	
+    sum = sum + g;		
+    }
+    div = sum/5;
+  
+  	System.out.print("The average " + div);			
+  												
+	}
+}

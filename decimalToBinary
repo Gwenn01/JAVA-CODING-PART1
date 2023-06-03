@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		double rem, binary = 0;
+		String str = "";
+		System.out.print("Enter Decimal Number: ");
+		double number = s.nextDouble();
+		
+		while(number > 0){
+		rem = number % 2;
+		str = str + rem;
+		number = Math.floor(number/2);		
+		}
+		System.out.print(str);
+	}
+}

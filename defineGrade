@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Physics: ");
+	    int P = s.nextInt();
+		System.out.print("Enter a Chemistry: ");
+		int C = s.nextInt();
+		System.out.print("Enter a Biology: ");
+		int B = s.nextInt();
+		System.out.print("Enter a Mathematics: ");
+		int M = s.nextInt();
+		System.out.print("Enter a Computer: ");
+		int Co = s.nextInt();
+		
+		double ave = (P * 0.20) + (C * 0.20) + (B * 0.20)+ (M * 0.20) + (Co * 0.20);
+		
+	    System.out.println(ave);	
+		
+		if(ave > 100){
+		    System.out.print("Invalid Grade");
+		}else if(ave >= 90){
+		    System.out.print("Grade A");
+		}else if(ave >= 80){
+		     System.out.print("Grade B");
+		}else if(ave >= 70){
+		     System.out.print("Grade C");
+		}else if(ave >= 60){
+		     System.out.print("Grade D");
+		}else if(ave >= 40){
+		     System.out.print("Grade E");
+		}else if(ave < 40){
+		    System.out.print("Grade Failed");
+		}
+			
+	}
+}

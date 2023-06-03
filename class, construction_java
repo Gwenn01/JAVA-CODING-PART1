@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter name:");
+		String name = s.nextLine();
+		System.out.print("Enter age:");
+		int age = s.nextInt();
+		
+		person p = new person(name, age);
+		
+	}
+	static class person{
+		String name;
+		int age;
+		
+		person(String name, int age){
+			this.name = name;
+			this.age = age;
+			
+			System.out.println(name + " Name Created");
+	    	System.out.println(age + " Age Created");
+			}
+		};
+}

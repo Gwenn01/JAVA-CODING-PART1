@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Price to See Discount: ");
+		int price = s.nextInt();
+		
+		double discount, totalPrice;
+		
+		if(price >= 100 && price <= 499){
+		   discount = price * 0.20;
+		   totalPrice =price - discount;
+		   System.out.print("20% and the total of discount is ");
+		   System.out.print(discount + " and the total price is " + totalPrice);
+		}else if(price >= 500 && price <= 999){
+		   discount = price * 0.30;
+		   totalPrice =price - discount;
+		   System.out.print("30% and the total of discount is ");
+		   System.out.print(discount + " and the total price is " + totalPrice);
+		}else if(price >= 1000){
+		   discount = price * 0.50;
+		   totalPrice =price - discount;
+		   System.out.print("50% and the total of discount is ");
+		   System.out.print(discount + " and the total price is " + totalPrice);
+		}
+	}
+}

@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		ArrayList<String> str = new ArrayList<>();
+		str.add("add1");
+		str.add("add2");
+		str.add("add3");
+		str.add("add4");
+		str.add("add5");
+		
+		for(String arr: str){
+			System.out.println(arr);
+		}
+	}
+}

@@ -1,0 +1,47 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the colum coordinates: ");
+	    char colum = s.next().charAt(0);
+		System.out.println("Enter the row coordinates: ");
+	    int row = s.nextInt();
+		//converting char to string to implement the even and odd mumber.
+		int convert = 0;
+		switch(colum){
+			case 'a':
+			convert = colum - colum + 1;
+			break;
+			case 'b':
+			convert = colum - colum + 2;
+			break;
+			case 'c':
+			convert = colum - colum + 3;
+			break;
+			case 'd':
+			convert = colum - colum + 4;
+			break;
+			case 'e':
+			convert = colum - colum + 5;
+			break;
+			case 'f':
+			convert = colum - colum + 6;
+			break;
+			case 'g':
+			convert = colum - colum + 7;
+			break;
+			case 'h':
+			convert = colum - colum + 8;
+			break;
+		}
+		
+	    if(convert%2 == 0 && row%2 == 0){
+	    	System.out.println("Black Block");
+	    }else if(convert%2 == 1 && row%2 == 1){
+	    	System.out.println("Black Block");
+	    }else{
+	    	System.out.println("White Block");
+	    }
+			
+	}
+}

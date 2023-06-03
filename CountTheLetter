@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a String: ");
+		String str = s.nextLine();
+		
+		String alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String alphaLower = "abcdefghijklmnopqrstuvwxyz";
+		
+		char[] ch = str.toCharArray();
+		char[] alUp = alphaUpper.toCharArray();
+		char[] alLo = alphaLower.toCharArray();
+		
+		int[] result = new int[ch.length];
+		
+		for(int i = 0; i <= ch.length-1; i++){
+		 if(Character.isLetter(ch[i])){
+		       for(int j = 0; j <= alUp.length-1; j++){
+		           if(ch[i] == alUp[j] || ch[i] == alLo[j]){
+		               result[i] = (j+1);
+		               break;
+		           }
+		       }
+		   }
+		}
+		
+		System.out.println();
+		for(int i = 0; i <= result.length-1; i++){
+		    if(result[i] != 0)
+		    System.out.print(result[i] + " ");
+		}
+		
+		
+	}
+}

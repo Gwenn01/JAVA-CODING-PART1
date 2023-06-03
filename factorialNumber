@@ -1,0 +1,17 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+		System.out.print("Enter a Factorial number: ");
+		int n = s.nextInt();
+		int q = n, result = 1;
+		
+		while(n != 1){
+		     n--;
+		     result = q * n;
+		     q = result;		
+		}
+		System.out.print("The factorial is: " + result);
+	}
+}

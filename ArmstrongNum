@@ -1,0 +1,38 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+	
+	int rem, mul = 1, result = 0, count = 0, cnt;
+	System.out.print("Enter a Number:");
+	int number = s.nextInt();
+	int q;
+	q = number;
+	
+	while(q != 0){
+		q = q / 10;
+		count++;	
+	}
+	cnt = count;
+	q = number;
+	
+	while(q != 0){
+		rem = q%10;
+		
+		while(cnt != 0){
+		mul = mul * rem;
+		cnt--;	
+		}
+		
+		result = result + mul;
+		cnt = count;
+		q = q/10;
+		mul = 1;
+	}
+	if(result == number){
+	System.out.print("Its a armstong number");
+	}else {
+	System.out.print("Its not a armstrong number");
+	}
+	}
+}

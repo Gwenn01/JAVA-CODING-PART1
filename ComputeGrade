@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		
+	    double LECTURE, midExam, finalExam, Attend, OutPort, QuizLexam, ClassParti,LABORATORY, labReports, Exam, AttendParti, FINAL_GRADE;
+	    
+		System.out.println("LECTURE (40%)");
+		
+		System.out.print("Enter Your Midterm Exam: ");
+		midExam = s.nextDouble();
+			System.out.print("Enter Your Final Exam: ");
+		finalExam = s.nextDouble();
+		System.out.print("Enter Your Attendance: ");
+		Attend = s.nextDouble();
+			System.out.print("Enter Your Output/Portfolio: ");
+		 OutPort = s.nextDouble();
+		System.out.print("Enter Your Quizess/Long Exam: ");
+		QuizLexam = s.nextDouble();
+		System.out.print("Enter Your Class Participation: ");
+		ClassParti = s.nextDouble();
+		
+		LECTURE = (midExam * 0.20) + (finalExam * 0.20) + (Attend * 0.10) + (OutPort * 0.25) + (QuizLexam * 0.15) + (ClassParti * 0.10);
+		System.out.println("LECTURE TOTAL: " + LECTURE);
+		
+		System.out.println();
+		
+		System.out.println("LABORATORY(60%)");
+		System.out.print("Enter Your Laboratory Reports: ");
+		labReports = s.nextDouble();
+			System.out.print("Enter Your Exam (Practical/Written): ");
+		Exam = s.nextDouble();
+		System.out.print("Enter Your Attendance/Participation: ");
+		AttendParti = s.nextDouble();
+		
+		LABORATORY = (labReports * 0.50) + (Exam * 0.30) + (AttendParti * 0.20);
+		System.out.println("LABORATORY TOTAL: " + LABORATORY);
+		
+		System.out.println();
+		FINAL_GRADE = (LECTURE * 0.40) + (LABORATORY * 0.60);
+		
+		System.out.println("FINAL GRADE: " + FINAL_GRADE);
+	}
+}

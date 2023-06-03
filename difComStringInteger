@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		String pass = "gwen123";
+		System.out.print("Enter a Password: ");
+		String p = s.nextLine();
+		if(p.equals(pass)){
+			System.out.println("Wencome User");
+		}else {
+			System.out.println("Invalid Pass");
+		}
+		
+		//in number 
+		int pin = 12345;
+		System.out.print("Enter Pin: ");
+		int pn = s.nextInt();
+		if(pin == pn){
+				System.out.println("Wencome User");
+		}else {
+			System.out.println("Invalid Pin");
+		}
+		
+	}
+}

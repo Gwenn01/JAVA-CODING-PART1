@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+    int[] arr = {1, 2, 2, 3, 4, 5, 5, 6, 1, 2, 8, 7, 9, 9, 7, 3, 4, 5, 10, 2, 10, 2, 6, 7, 6, 3, 8, 9, 10, 11};
+     int[] store = new int[arr.length];
+     
+     for(int i = 0; i <= arr.length-1; i++){
+     	store[i] = arr[i];
+     	for(int j = i+1; j <= arr.length-1; j++){
+     		if(store[i] == arr[j]){
+     			arr[j] = 0;
+     		}
+     	}
+     }
+     
+     for(int i = 0; i <= arr.length-1; i++){
+     	if(store[i] != 0){
+     		System.out.print(store[i] + " ");
+     	}
+     }
+         
+	}
+}

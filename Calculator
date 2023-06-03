@@ -1,0 +1,37 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		int sum, product, different, quotient;
+		
+		System.out.print("Enter a first number: ");
+		int num1 = s.nextInt();
+		System.out.print("Enter a operator: ");
+		char op = s.next().charAt(0);
+		System.out.print("Enter a secind number: ");
+		int num2 = s.nextInt();
+		
+		sum = num1 + num2;
+		product = num1 * num2;
+		different = num1 - num2;
+		quotient = num1 / num2;
+		
+		switch(op){
+			case '+':
+			System.out.print("The sum of two integer is " + sum);
+			break;
+			case '-':
+			System.out.print("The different of two integer is " + different);
+			break;
+			case '*':
+			System.out.print("The product of two integer is " + product);
+			break;
+					case '/':
+			System.out.print("The quotient of two integer is " + quotient);
+			break;
+			default:
+			System.out.print("INVALID OP");
+			break;			
+		}
+	}
+}

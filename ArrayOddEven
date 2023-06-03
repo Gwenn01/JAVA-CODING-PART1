@@ -1,0 +1,23 @@
+public class Main {
+	public static void main(String[] args) {
+		int[] arr = {1, 2, 4, 5, 7, 8, 9, 3};
+		int[] temp = new int[arr.length];
+		
+		int j = 0, k = 7;
+		
+		
+		for(int i = 0; i <= arr.length-1; i++){
+			  if(arr[i]%2 == 0){
+			  	temp[k] = arr[i];
+			  	k--;
+			  }else{
+			      temp[j] = arr[i];
+			      j++;
+			  }
+		}
+		
+		for(int i = 0; i <= temp.length-1; i++){
+			System.out.print(temp[i] + " ");
+		}
+	}
+}

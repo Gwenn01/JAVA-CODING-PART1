@@ -1,0 +1,13 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter Fahrenheit to celcius");
+		double f = s.nextDouble();
+		double solution;
+		
+		solution = (f - 32) * 5/9;
+		
+		System.out.print("The celcius is " + solution);
+	}
+}

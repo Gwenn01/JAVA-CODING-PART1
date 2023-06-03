@@ -1,0 +1,19 @@
+public class Main {
+	public static void main(String[] args) {
+		int[] arr = {10, 40, 32, 12, 70, 85, 50, 20, 90, 19};
+		
+		int high1 = 0, high2 = 0;
+		
+		for(int i = 0; i <= arr.length-1; i++){
+			if(arr[i] >= high1){
+				high1 = arr[i];
+			}
+		}
+		for(int i = 0; i <= arr.length-1; i++){
+			if(arr[i] >= high2 && arr[i] != high1){
+				high2 = arr[i];
+			}
+		}
+		System.out.print("The 1st highest value is " + high1 + " and the 2nd highest value is " + high2);
+	}
+}

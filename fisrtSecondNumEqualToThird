@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Input the first number: ");
+		int firstNum = s.nextInt();
+		System.out.print("Input the Second number: ");
+		int secondNum = s.nextInt();
+		System.out.print("Input the third number: ");
+		int thirdNum = s.nextInt();
+		
+	    int sum = firstNum + secondNum;
+		boolean isEqual;
+		/*is first num and second num equal to third num*/
+		if(thirdNum == sum ){
+			isEqual = true;
+			System.out.print("The result " + isEqual);
+		}else{
+		     isEqual = false;
+			System.out.print("The result " + isEqual);	
+		}
+		
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+		  System.out.print("Enter a Number: ");
+		  int num = s.nextInt(); 
+		  int remainder;
+		  
+		   remainder = num % 2;
+		  
+		  if(remainder == 0){
+		  	System.out.print(num + " Even Number");
+		  }else {
+		      System.out.print(num + " Odd Number");
+		  }
+		       
+		
+		}	
+}

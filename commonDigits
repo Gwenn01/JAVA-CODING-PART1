@@ -1,0 +1,33 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Input number between 25 and 75");
+		
+		System.out.println("Enter a first number: ");
+		int firstNum = s.nextInt();
+		System.out.println("Enter a second number: ");
+		int secondNum = s.nextInt();
+		
+		boolean isComonDigits = false;
+		
+	    int rem1 = 0, rem2 = 0;
+		
+		if((firstNum > 25 && firstNum < 75) && (secondNum > 25 && secondNum < 75)){
+		 while(firstNum != 0 || secondNum != 0){
+		 rem1 = firstNum % 10;
+		 rem2 = secondNum %10;
+			 if(rem1 == rem2){
+			 	isComonDigits = true;
+			 	break;
+			 }
+	     firstNum /= 10;
+	     secondNum /= 10;
+		 }
+		}else{
+			System.out.println("Pls input a number between 25 and 75");
+		}
+		
+	System.out.print("Result: " + isComonDigits);
+	}
+}

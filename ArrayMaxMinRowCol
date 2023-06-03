@@ -1,0 +1,43 @@
+public class Main {
+	public static void main(String[] args) {
+		
+		int[][] arr = {
+			{5, 22, 10, 1, 4},
+			{8, 4, 5, 12, 3},
+			{6, 9, 15, 8, 7}
+		};
+		
+		int min, max;
+		System.out.println("The Min and Max Rows Value in Array: ");
+		
+		
+		for(int i = 0; i <= arr.length-1; i++){
+			 min = 100;
+			 max = 0;
+			 for(int j = 0; j <= arr[i].length-1; j++){
+			 	if(arr[i][j] >= max){
+			 		max = arr[i][j];
+			 	}
+			 	if(arr[i][j] <= min)
+			 	    min = arr[i][j];
+			 }
+			 System.out.println("Row" + (i+1) + ":" + " max = " + max + " " + "min = " + min);
+		}
+		
+		System.out.println();
+		
+			System.out.println("The Min and Max Columns Value in Array: ");
+		for(int i = 0; i <= arr.length+1; i++){
+			 min = 100;
+			 max = 0;
+			 for(int j = 0; j <= arr.length-1; j++){
+			 	if(arr[j][i] >= max){
+			 		max = arr[j][i];
+			 	}
+			 	if(arr[j][i] <= min)
+			 	    min = arr[j][i];
+			 }
+			 System.out.println("Columns" + (i+1) + ":" + " max = " + max + " " + "min = " + min);
+		}		
+	}
+}

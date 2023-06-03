@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		double Cp;
+		System.out.print("Principal (amount): ");
+		double p = s.nextDouble();
+		System.out.print("Time: ");
+		double t = s.nextDouble();
+		System.out.print("Rate: ");
+		double r = s.nextDouble();
+	    
+	    Cp = p * (Math.pow((1 + r/100), t));
+	    
+	    
+	    System.out.println(Cp);
+	}
+}

@@ -1,0 +1,31 @@
+public class Main {
+	public static void main(String[] args) {
+		int[] array = {2, 34, 3, 8, 2};
+		
+		System.out.print("[");
+		for(int i = 0; i <= array.length-1; i++){
+		    System.out.print(array[i] + ", ");
+		}
+		System.out.print("]");
+		
+		System.out.println();
+		int twin = 0;
+		boolean isTwin = false;
+		
+		for(int i = 0; i <= array.length-1; i++){
+		    for(int j = i+1; j <= array.length-1; j++){
+		        if(array[i] == array[j]){
+		            twin = array[i];
+		            isTwin = true;
+		            break;
+		        }
+		    }
+		}
+		System.out.println();
+	    if(isTwin){
+	        System.out.print(twin);
+		}else{
+		    System.out.print("None");
+     	}	
+	}
+}

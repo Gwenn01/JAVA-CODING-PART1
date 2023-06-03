@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.print("Enter how many numbers you want to input, between 1 to 20: ");
+		int input = s.nextInt();
+	    
+	    int[] arr = new int[input];
+	    if(input >= 0 && input <= 20){
+	       for(int i = 0; i <= input-1; i++){
+	       	System.out.print("Enter number: ");
+	       	int n = s.nextInt();
+	       	arr[i] = n;
+	       }
+	    }else {
+	    	System.out.println("Invalid number between 1 to 7");
+	    }
+	    
+	    //
+		System.out.println();
+		String result = "";
+		for(int i = 0; i <= arr.length-1;i++){
+			result += arr[i] + " ";
+		}
+		if(input >= 0 && input <= 20)	
+		System.out.print("Your Input number is: " + result);	    
+	}	
+}
